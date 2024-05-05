@@ -1,6 +1,7 @@
 <!--Overwriting the base templates with the help of blocks by child-->
 {% extends "base.html" %} {% block title %}login{% endblock %} 
 {% block content%}
+<form method="post">
 <h3 align="center">Login</h3>
 <div class="form-group">
     <label for="email">Email Address</label>
@@ -16,5 +17,5 @@
     <input type="text" class="form-control" id="password" name="password" placeholder="Enter your password"
     />
 </div>
-<button type="submit" class="btn btn-primary">Login</button>
+<button type="submit" class="btn btn-primary">Login</button></form>
 {%endblock %}
